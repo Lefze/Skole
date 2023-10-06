@@ -1,0 +1,88 @@
+:root {
+  --top-height: 50px;
+  --top-border-radius: 30px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: rgb(53, 53, 53);
+}
+
+#mainsec {
+  width: 75%;
+  min-height: 100svh;
+  padding-top: 5%;
+  padding-bottom: 10%;
+  margin: 0 auto;
+  margin-top: var(--top-height);
+  background-color: rgb(69, 69, 69);
+}
+
+#top-bar {
+  width: 90%;
+  z-index: 10;
+  height: var(--top-height);
+  margin-left: 5%;
+  background: linear-gradient(
+    0deg,
+    rgb(36, 32, 32) 0%,
+    rgb(115, 115, 115) 33%,
+    black 100%
+  );
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  border-bottom-left-radius: var(--top-border-radius);
+  border-bottom-right-radius: var(--top-border-radius);
+}
+
+#top-bar > .inner {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  margin-top: 10px;
+  margin-left: 25%;
+  max-width: 50%;
+
+  height: calc(var(--top-height) - 20px);
+}
+.navlistbox {
+  background-color: rgba(117, 123, 123, 0.218);
+  min-width: 10%;
+  padding-top: 5px;
+  text-align: center;
+  border-radius: 10%;
+}
+
+.darkcard {
+  color: white;
+  background-color: rgb(46, 46, 46);
+}
+
+.box1 {
+  margin: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  min-height: 20svh;
+  min-width: 20svh;
+  max-width: 33%;
+  transition: 1s;
+}
+
+.box1:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+  scale: 101%;
+}
+
+.flextest {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 10svh;
+  gap: 10px;
+}
